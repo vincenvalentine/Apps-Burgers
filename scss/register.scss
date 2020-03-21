@@ -1,0 +1,138 @@
+@import "fonts";
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: rgba(253, 207, 100, 0.933);
+}
+
+.success {
+    position: relative;
+    input{
+        border:2px solid #97f19c;
+        transition: all 0.5s ease;
+    }
+    i{
+        visibility: visible !important;
+        color: #27f743;
+        transition: all 1s ease-out;
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+.error {
+    background-color: #fd5656da;
+    transition: all 0.5s ease-in;
+    padding: 1rem;
+}
+
+.header {
+    background-color: #e0be7f;
+    height: 50%;
+    font-family: 'GothamRounded-Bold';
+    .header-wrap{
+        padding: 1rem;
+        display: flex;
+       img{
+           width: 2rem;
+           height: 2rem;
+       }
+       p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5rem;
+        color : #9c7325;
+       }
+    }
+}
+
+.Register {
+    display: flex;
+    font-family:GothamRounded-Medium;
+    margin: 1rem;
+    @media only screen and (max-width :411px){
+        .Register-box{
+            top: 10% !important;
+            bottom: 30%;
+            overflow-x:scroll;
+        }
+    }
+    .Register-box{
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 20rem;
+        margin-bottom: 1rem;
+        .Register-title{
+            text-align : center;
+            color: #9c7325;
+        }
+        .Register-content{
+            .register-error{
+                margin-bottom: 0.5rem;
+                font-size: 10px;
+                text-align: center;
+            }
+            .register-error:active{
+                transition: all 0.5s ease;
+                padding: 1rem;
+            }
+            .Register-input{
+                font-family:GothamRounded-Light;
+                font-size: 1rem;
+                border: 1px solid #ebe8e9;
+                padding: 1rem;
+                margin: 0.5rem;
+                
+                input{
+                    padding : 0.5rem;
+                    width: 90%;
+                }
+                i {
+                    position: absolute;
+                    margin-right: 0.5rem;
+                    visibility: hidden;
+                }
+            }
+            .btn {
+                display: flex;
+                justify-content:center;
+                margin-bottom: 0.5rem;
+                input{
+                    font-family:GothamRounded-Bold;
+                    color : black;
+                    background-color:#ff7e00;
+                    border-radius: 0.5rem;
+                    padding: 1rem;
+                    outline : none;
+                    border : none;
+                }
+            }
+            .register{
+                font-family:GothamRounded-Light;
+                display: flex;
+                justify-content: center;
+                margin: 0.5rem;
+                p{
+                    font-size: 10px;
+                }
+            }
+            .login{
+                text-align : right;
+                p{
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+}

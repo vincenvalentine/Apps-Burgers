@@ -1,0 +1,224 @@
+@import "fonts";
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.green { color: rgb(14, 136, 67) !important;}
+.orange {background-color: sandybrown;}
+
+.Burger-pop{
+    // position: relative;
+    .header {
+        background-color: #e0be7f;
+        height: 50%;
+        font-family: 'GothamRounded-Bold';
+        .header-wrap{
+            padding: 1rem;
+            display: flex;
+           img{
+               width: 2rem;
+               height: 2rem;
+           }
+           p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0.5rem;
+            color : #9c7325;
+           }
+        }
+    }
+    
+    .content{
+        .content-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1.5rem;
+            h2{
+                font-family: GothamRounded-Bold;
+                font-size: 1rem;
+            }
+           .content-title-btn{
+            .content-reset-btn{
+                font-family: GothamRounded-Bold;
+                font-size: 0.8rem;
+                text-align: center;
+                border-radius: 0.5rem;
+                // background-color: sandybrown;
+                padding: 0.5rem;
+                cursor: pointer;
+                margin: 0.5rem;
+            }
+           }
+        }
+        .content-wrap{
+            position: relative;
+            width: 20rem; 
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            padding: 0.5rem;
+            .content-box{
+                display: flex;
+                justify-content: space-between;
+                font-family: GothamRounded-Light;
+                border-radius: 0.5rem;
+                padding: 1rem;
+                // box-shadow: 0px 0px 6px 0px;
+                border: 1px solid;
+                margin-bottom: 0.5rem;
+                img{
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+        }
+    }
+    
+    .popUp{
+        display: none;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1rem;
+        font-family:GothamRounded-Medium;
+        font-size: 12px;
+        z-index: 10;
+        .popUp-content{
+            width : 20rem;
+            // max-width: 80%;
+            background-color:#e0be7f;
+            box-shadow: 0px 0px 20px 2px;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            .popUp-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: solid 2px;
+                h3{
+                    font-family:GothamRounded-Bold;
+                    font-size: 2rem;
+                }
+                button{
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    background: none;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+            .popUp-menu{
+                padding: 1rem 0.5rem;
+                .popUp-order{
+                    p{
+                        font-family: GothamRounded-Bold;
+                        font-size: 1rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    select{
+                        font-family: GothamRounded-Book;
+                    }
+                    option{
+                        font-family: GothamRounded-Book;
+                    }
+                }
+                .popUp-menu-order{
+                    display: flex;
+                    // justify-content: space-between;
+                    align-items: center;
+                    // color:  #110c02;;
+                    margin: 1rem 0rem;
+                    img{
+                        width: 5rem;
+                    }
+                    .popUp-label{
+                        padding-left: 1rem;
+                        width: 100%;
+                        label{
+                            font-family: GothamRounded-Bold;
+                            font-size: 1rem;
+                        }
+                        h5{
+                            font-family: GothamRounded-Light;
+                        }
+                       .price{
+                           display: flex;
+                           justify-content: space-between;
+                        p{
+                            font-family: GothamRounded-medium;
+                            padding: 0.1rem;
+                           
+                        }
+                        .popUp-menu-btn{
+                            text-align : center;
+                            padding : 0.2rem;
+                            border-radius: 0.2rem;
+                            // border: 1px solid;
+                            background-color: #19610a;
+                            color: white;
+                            font-size: 0.5rem;
+                            margin-left: 0.5rem;
+                            font-family: GothamRounded-Bold;;
+                            cursor: pointer;
+                        }
+                       }
+                    }
+                  
+                }
+                .Popup-btn{
+                    // display:block;
+                    text-align : center;
+                    padding : 1rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid;
+                    margin-left: 70%;
+                    background-color: #ffaf1c;
+                    font-family: GothamRounded-Bold;;
+                    cursor: pointer;
+                
+                }
+            }
+        }
+    }
+    
+    .button{
+        display:block;
+        padding : 1rem;
+        border-radius: 0.5rem;
+        position: relative;
+        margin-bottom: 1rem;
+        width: 5rem;
+        text-align: center;
+        left: 50%;
+        bottom: 0;
+        font-family:GothamRounded-Bold;
+        // bottom: 0;
+        transform: translateX(-50%);
+        background-color: #ffaf1c;
+        cursor: pointer;
+    
+    }
+    
+    #overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background-color: rgba(0,0,0,0.5);
+        pointer-events: none;
+        opacity: 0;
+    }
+    
+    #overlay.active{
+        transition: all 0.5s ease-in;
+        pointer-events: all;
+        opacity: 1;
+    }
+}

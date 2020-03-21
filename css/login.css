@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "GothamRounded-Bold";
+  src: url("fonts/GothamRounded-Bold.eot");
+  src: url("fonts/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Bold.woff2") format("woff2"), url("fonts/GothamRounded-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Light";
+  src: url("fonts/GothamRounded-Light.eot");
+  src: url("fonts/GothamRounded-Light.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Light.woff2") format("woff2"), url("fonts/GothamRounded-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Book";
+  src: url("fonts/GothamRounded-Book.eot");
+  src: url("fonts/GothamRounded-Book.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Book.woff2") format("woff2"), url("fonts/GothamRounded-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Medium";
+  src: url("fonts/GothamRounded-Medium.eot");
+  src: url("fonts/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Medium.woff2") format("woff2"), url("fonts/GothamRounded-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(253, 207, 100, 0.933);
+}
+
+.header {
+  background-color: #e0be7f;
+  height: 50%;
+  font-family: "GothamRounded-Bold";
+}
+.header .header-wrap {
+  padding: 1rem;
+  display: flex;
+}
+.header .header-wrap img {
+  width: 2rem;
+  height: 2rem;
+}
+.header .header-wrap p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5rem;
+  color: #9c7325;
+}
+
+.login {
+  position: relative;
+  font-family: GothamRounded-Medium;
+}
+@media screen and (max-width: 411px) {
+  .login .login-box {
+    top: 40% !important;
+    width: 15rem !important;
+  }
+}
+.login .login-box {
+  position: absolute;
+  left: 50%;
+  margin-top: 8%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 20rem;
+}
+.login .login-box .login-title {
+  text-align: center;
+  color: #9c7325;
+}
+.login .login-box .login-error {
+  background-color: #ff6262bb;
+  font-size: 10px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.login .login-box .login-content .login-input {
+  font-family: GothamRounded-Light;
+  font-size: 1rem;
+  border-bottom: 2px solid #d1d0d1;
+  margin: 1rem;
+}
+.login .login-box .login-content .login-input i {
+  width: 1rem;
+  color: #adb5bd;
+}
+.login .login-box .login-content .login-input input {
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  border: none;
+  outline: none;
+}
+.login .login-box .login-content .btn {
+  display: flex;
+  justify-content: center;
+}
+.login .login-box .login-content .btn input {
+  font-family: GothamRounded-Bold;
+  color: black;
+  background-color: #ff7e00;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+.login .login-box .login-content .register {
+  font-family: GothamRounded-Light;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.login .login-box .login-content .register p {
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=login.css.map */

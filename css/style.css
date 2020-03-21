@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "GothamRounded-Bold";
+  src: url("fonts/GothamRounded-Bold.eot");
+  src: url("fonts/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Bold.woff2") format("woff2"), url("fonts/GothamRounded-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Light";
+  src: url("fonts/GothamRounded-Light.eot");
+  src: url("fonts/GothamRounded-Light.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Light.woff2") format("woff2"), url("fonts/GothamRounded-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Book";
+  src: url("fonts/GothamRounded-Book.eot");
+  src: url("fonts/GothamRounded-Book.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Book.woff2") format("woff2"), url("fonts/GothamRounded-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Medium";
+  src: url("fonts/GothamRounded-Medium.eot");
+  src: url("fonts/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Medium.woff2") format("woff2"), url("fonts/GothamRounded-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.green {
+  color: #0e8843 !important;
+}
+
+.orange {
+  background-color: sandybrown;
+}
+
+.Burger-pop .header {
+  background-color: #e0be7f;
+  height: 50%;
+  font-family: "GothamRounded-Bold";
+}
+.Burger-pop .header .header-wrap {
+  padding: 1rem;
+  display: flex;
+}
+.Burger-pop .header .header-wrap img {
+  width: 2rem;
+  height: 2rem;
+}
+.Burger-pop .header .header-wrap p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5rem;
+  color: #9c7325;
+}
+.Burger-pop .content .content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+}
+.Burger-pop .content .content-title h2 {
+  font-family: GothamRounded-Bold;
+  font-size: 1rem;
+}
+.Burger-pop .content .content-title .content-title-btn .content-reset-btn {
+  font-family: GothamRounded-Bold;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.Burger-pop .content .content-wrap {
+  position: relative;
+  width: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  padding: 0.5rem;
+}
+.Burger-pop .content .content-wrap .content-box {
+  display: flex;
+  justify-content: space-between;
+  font-family: GothamRounded-Light;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid;
+  margin-bottom: 0.5rem;
+}
+.Burger-pop .content .content-wrap .content-box img {
+  width: 6rem;
+  height: 6rem;
+}
+.Burger-pop .popUp {
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  font-family: GothamRounded-Medium;
+  font-size: 12px;
+  z-index: 10;
+}
+.Burger-pop .popUp .popUp-content {
+  width: 20rem;
+  background-color: #e0be7f;
+  box-shadow: 0px 0px 20px 2px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.Burger-pop .popUp .popUp-content .popUp-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px;
+}
+.Burger-pop .popUp .popUp-content .popUp-title h3 {
+  font-family: GothamRounded-Bold;
+  font-size: 2rem;
+}
+.Burger-pop .popUp .popUp-content .popUp-title button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu {
+  padding: 1rem 0.5rem;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-order p {
+  font-family: GothamRounded-Bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-order select {
+  font-family: GothamRounded-Book;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-order option {
+  font-family: GothamRounded-Book;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-menu-order {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-menu-order img {
+  width: 5rem;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-menu-order .popUp-label {
+  padding-left: 1rem;
+  width: 100%;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-menu-order .popUp-label label {
+  font-family: GothamRounded-Bold;
+  font-size: 1rem;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-menu-order .popUp-label h5 {
+  font-family: GothamRounded-Light;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-menu-order .popUp-label .price {
+  display: flex;
+  justify-content: space-between;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-menu-order .popUp-label .price p {
+  font-family: GothamRounded-medium;
+  padding: 0.1rem;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .popUp-menu-order .popUp-label .price .popUp-menu-btn {
+  text-align: center;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  background-color: #19610a;
+  color: white;
+  font-size: 0.5rem;
+  margin-left: 0.5rem;
+  font-family: GothamRounded-Bold;
+  cursor: pointer;
+}
+.Burger-pop .popUp .popUp-content .popUp-menu .Popup-btn {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  margin-left: 70%;
+  background-color: #ffaf1c;
+  font-family: GothamRounded-Bold;
+  cursor: pointer;
+}
+.Burger-pop .button {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+  width: 5rem;
+  text-align: center;
+  left: 50%;
+  bottom: 0;
+  font-family: GothamRounded-Bold;
+  transform: translateX(-50%);
+  background-color: #ffaf1c;
+  cursor: pointer;
+}
+.Burger-pop #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  opacity: 0;
+}
+.Burger-pop #overlay.active {
+  transition: all 0.5s ease-in;
+  pointer-events: all;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

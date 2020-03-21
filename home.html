@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn delay-1s">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+    <div class="Burger-pop">
+        <div class="header">
+            <div class="header-wrap">
+                <img class="animated wobble delay-2s" src="image/burger.png" alt="">
+                <p>Burger Masa Gitu</p>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <div class="content-title">
+                <h2>Order item(s)</h2>
+                <div class="content-title-btn">
+                    <div class="content-reset-btn orange" onclick="clearStorage()">
+                        <p>Reset</p>
+                    </div>
+                    <div class="content-reset-btn green" onclick="showPopUp()">
+                        <p>+ AddMore</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrap" id="content-wrap">
+                <div class="content-box">
+                    <p>Burger Masa Gitu</p>
+                    <img src="image/burger.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+        <div class="popUp" id="popUp">
+            <div class="popUp-content">
+                <div class="popUp-title">
+                    <h3>ORDER</h3>
+                    <button id="popUp-close">&times;</button>
+                </div>
+                <div class="popUp-menu">
+                    <div class="popUp-order">
+                        <p>Choose Burger :</p>
+                        <select name="PopUp-Order-list" id="PopUp-Order-list">
+                            <option value="Burger Salted Egg">Burger Salted Egg</option>
+                            <option value="Bacon Burger with sauce cheese">Bacon Burger with sauce cheese</option>
+                            <option value="Cheese Burger">Cheese Burger</option>
+                        </select>
+                    </div>
+
+                    <div class="popUp-menu-order">
+                        <img src="image/burger/png/burger-egg.png" alt="" srcset="">
+                        <div class="popUp-label">
+                            <label for="Cheese-Burger">Burger Salted Egg</label>
+                            <h5>Dengan Sayuran Selada, dan Daging Sapi Pilihan</h5>
+                            <div class="price">
+                                <p>Rp 25.000,-</p>
+                                <div class="popUp-menu-btn">
+                                    <p>add order +</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="popUp-menu-order">
+                        <img src="image/burger/png/burger1.png" alt="" srcset="">
+                        <div class="popUp-label">
+                            <label for="Cheese-Burger">Bacon Burger with sauce cheese</label>
+                            <h5>Dengan Sayuran Selada, dan Daging Sapi Pilihan</h5>
+                            <div class="price">
+                                <p>Rp 30.000,-</p>
+                                <div class="popUp-menu-btn">
+                                    <p>add order +</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="popUp-menu-order">
+                        <img src="image/burger/png/cheese-burger.png" alt="" srcset="">
+                        <div class="popUp-label">
+                            <label for="Cheese-Burger">Cheese Burger</label>
+                            <h5>Dengan Sayuran Selada, dan Daging Sapi Pilihan</h5>
+                            <div class="price">
+                                <p>Rp 22.000,-</p>
+                                <div class="popUp-menu-btn">
+                                    <p>add order +</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="popUp-menu-order">
+                    <img src="image/Drink/cola.png" alt="" srcset="">
+                    <div class="popUp-label">
+                        <label for="Cheese-Burger">Cola</label> 
+                        <p>Rp 8.000,-</p>
+                    </div>
+                    
+                </div>
+                <div class="popUp-menu-order">
+                    <img src="image/Drink/Lemon.png" alt="" srcset="">
+                    <div class="popUp-label">
+                        <label for="Cheese-Burger">Lemon Water</label> 
+                        <p>Rp 8.000,-</p>
+                    </div>
+                    
+                </div>
+
+                <div class="popUp-menu-order">
+                    <img src="image/Drink/Pepsi.png" alt="" srcset="">
+                    <div class="popUp-label">
+                        <label for="Cheese-Burger">Pepsi</label> 
+                        <p>Rp 8.000,-</p>
+                    </div>
+                    
+                </div> -->
+
+                    <div class="Popup-btn" id="Popup-btn" onclick="btnOrder()">
+                        <p>Order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button" id="btn" onclick="showPopUp()">
+            <p>Order</p>
+        </div>
+
+        <div id="overlay"></div>
+
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
