@@ -140,7 +140,7 @@ function addUser() {
     registerBox[0].classList.add('animated', 'bounceOutRight')
 
     setTimeout(function () {
-        window.location.pathname = '/login.html';
+        window.location.pathname = '/';
      }, 1000);
     return;
     

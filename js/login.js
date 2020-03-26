@@ -19,7 +19,7 @@ function validateLogin (){
 
         if ((ArrayUserLoginList[i].name === username.value) && (ArrayUserLoginList[i].password === password.value)) {
             setTimeout(function () {
-                window.location.pathname = "/"; 
+                window.location.pathname = "/home.html"; 
              }, 1000);
             return;
         }
